@@ -20,8 +20,8 @@ db.movies.find({actors:"Brad Pitt"},{title:1,_id:0});
 mostrar las peliculas cuyo titulo contenga the Hobbit
 db.movies.find({franchise:"The Hobbit"},{title:1,_id:0});
 
-mostrar las peliculas que fueron hechas en el 90
-db.movies.find({title},{year:1990})
+mostrar las peliculas que fueron hechas en el 1999
+db.movies.find({year:1999},{title:1,_id:0})
 
 mostrar las peliculas hechas entre 1990 y el 2000
 db.movies.find({year:{$gte:1990,$lt:2000}},{title:1,_id:0});
